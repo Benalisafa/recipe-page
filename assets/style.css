@@ -103,7 +103,7 @@ li{
     font-weight: bold;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 1000px) {
     .container{
         width:80vw;
     }
