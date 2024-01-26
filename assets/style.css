@@ -8,6 +8,7 @@ body{
     align-items: center; 
     font-family: 'Outfit' ;
     font-size: 16px;
+    color:     hsl(30, 10%, 34%);
 }
 
 
@@ -16,7 +17,7 @@ body{
     background-color: hsl(0, 0%, 100%);
     padding: 50px;
     border-radius: 20px;
-    width:50vw;
+    width: 50vw;
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -56,7 +57,7 @@ border-radius: 10px;
 
 .subtext{
     font-weight: bold;
-    color: hsl(14, 45%, 36%);;
+    color: hsl(14, 45%, 36%);
 }
 
 table{
@@ -76,11 +77,38 @@ td {
 .end{
     border-bottom: 0;
 }
+ul, ol{
+    padding-left: 1rem;
+}
 
 li{
     padding-bottom: 10px;
+    padding-left: 1rem;   
+
 }
+
+.list-purple li::marker {
+    
+    color: hsl(332, 51%, 32%);
+}
+
+.list-brown li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+  }
+
+
 
 .thead{
     font-weight: bold;
+}
+
+@media (max-width: 380px) {
+    .container{
+        width:80vw;
+    }
+    body{
+        margin-top: 0;
+    }
+
 }
